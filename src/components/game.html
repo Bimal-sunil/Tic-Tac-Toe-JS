@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X-O-X</title>
+    <link rel="icon" href="../../public/x-o-x.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/game.css" />
+    <script
+      src="https://kit.fontawesome.com/b44496ec6f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <a href="../index.html" class="back-btn" id="backButton">
+        <i class="fa-solid fa-arrow-left"></i>
+      </a>
+      <div class="score-card">
+        <span>You</span>
+        <div class="score">
+          <span id="userScore">0</span>
+          <span>-</span>
+          <span id="opponentScore">0</span>
+        </div>
+        <span>Opp</span>
+      </div>
+      <div class="game-board" id="gameBoard">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+      </div>
+      <button class="btn reset-btn" id="resetBtn">Reset</button>
+      <div class="modal-background" id="modal">
+        <div class="game-over-modal">
+          <span id="gameResult"></span
+          ><button class="btn restart-btn" id="restartBtn">Restart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

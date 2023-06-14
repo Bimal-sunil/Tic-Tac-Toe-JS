@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,400&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: rgb(2, 0, 36);
+  --font-color: #ece9e6;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  background: rgb(2, 0, 36);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#logoContainer {
+  width: 100%;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logoContainer #logoBanner {
+  width: 14rem;
+}
+
+.welcome-text {
+  font-family: "Poppins", sans-serif;
+  color: var(--font-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.play-btn {
+  text-decoration: none;
+}
+
+.play-btn button {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 25px;
+  border: none;
+  background: #f2c94c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f2994a,
+    #f2c94c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f2994a,
+    #f2c94c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 0px 4px 9px 4px rgba(242, 201, 76, 0.25),
+    inset 0px 6px 9px 3px rgba(255, 255, 255, 0.3);
+  color: var(--background);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+
+.play-btn button:hover {
+  transform: scale(1.1);
+}
+
+.play-btn i {
+  margin-left: 0.5rem;
+}
